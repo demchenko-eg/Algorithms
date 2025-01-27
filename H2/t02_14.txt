@@ -1,0 +1,94 @@
+a)
+sum_{i=0}^{n} i = O(n)
+
+def a(n):
+    sum = 0
+    for i in range(1, n + 1):
+        sum += i
+    return sum
+
+
+b)
+sum_{i=0}^{n} i^2 = O(n)
+
+def b(n):
+    sum = 0
+    for i in range(1, n + 1):
+        sum += i**2
+    return sum
+
+
+с)
+sum_{i=0}^{n} a^i = O(n)
+
+def c(n, a):
+    sum = O
+    d = 1
+    for i in range(1, n + 1):
+        sum += d
+        d *= a
+    return sum
+
+
+d)
+sum_{i=0}^{n} i^i = O(n^2)
+
+def d(n):
+    sum = 0
+    for i in range(n + 1):
+        sum += i**i
+    return(sum)
+
+
+e)
+prod_{i=1}^{n} (1 / (1 + i)) = O(n)
+
+def e(n):
+    prod = 1
+    for i in range(1, n + 1):
+        prod *= (1 / (1 + i))
+    return prod
+
+
+f)
+prod_{i=0}^{n} (1 / (1 + i!))
+
+def f(n):
+    prod = 1
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+        prod *= (1 / (1 + fact))
+    return prod
+
+
+g)
+prod_{i=1}^{n} ((a^i) / (1 + i!))
+
+def g(n, a):
+    prod = 1
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+        prod *= ((a ** i) / (1 + fact))
+    return prod
+
+
+h)
+prod_{i=1}^(n) (1 / (1 + i^m)) = O(nm)
+
+def h(n, m):
+    prod = 1
+    for i in range(1, n + 1):
+        prod *= (1 / (1 + i ** m))
+    return prod
+
+
+i)
+prod_{i=1}^{n} (1 / (1 + i^i)) = O(n^2)
+
+def I(n):
+    prod = 1
+    for i in range(1, n + 1):
+        prod *= (1 / (1 + i ** i))
+    return prod
