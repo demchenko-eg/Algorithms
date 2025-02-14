@@ -1,7 +1,6 @@
 def can_place_cows(intervals, n, d):
     count = 0
     last_pos = None
-
     for a, b in intervals:
         pos = a if last_pos is None else max(a, last_pos + d)
         while pos <= b:
