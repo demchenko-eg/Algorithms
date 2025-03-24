@@ -139,4 +139,4 @@ class Tetris:
 root = tk.Tk()
 root.title("Tetris in Tkinter")
 game = Tetris(root)
-root.mainloop()
+root.mainloop()шщ
