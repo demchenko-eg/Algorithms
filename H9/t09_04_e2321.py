@@ -1,3 +1,5 @@
+import random
+
 def quicksort(arr, low, high):
     if low < high:
         pivot_index = partition(arr, low, high)
@@ -5,6 +7,8 @@ def quicksort(arr, low, high):
         quicksort(arr, pivot_index + 1, high)
 
 def partition(arr, low, high):
+    pivot_index = random.randint(low, high)
+    arr[pivot_index], arr[high] = arr[high], arr[pivot_index]
     pivot = arr[high]
     i = low - 1
     for j in range(low, high):
